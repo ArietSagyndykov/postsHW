@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navElem {
+  margin: 0 10px;
+}
+.formContainer {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.btn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btnDelete {
+  background-color: #e74c3c;
+}
+
+.btnDelete:hover {
+  background-color: #c0392b;
+}
+
+.btnEdit {
+  background-color: #3498db;
+}
+
+.btnEdit:hover {
+  background-color: #2980b9;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Optional: allows cards to wrap to the next line */
+  gap: 20px; /* Optional: adds space between the cards */
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+  padding: 20px; /* Optional: adds padding around the container */
 }
